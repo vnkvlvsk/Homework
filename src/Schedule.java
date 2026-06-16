@@ -18,14 +18,12 @@ public class Schedule implements Cloneable {
     }
 
     public void addLesson(String lesson) {
-        if (lesson != null) {
-            lessons.add(lesson);
-        }
+        if (lesson == null) { return; }
+        lessons.add(lesson);
     }
 
     public void removeLesson(String lesson) {
-        if (lesson != null) {
-            lessons.remove(lesson);
-        }
+        if (lesson == null) { return; }
+        lessons.remove(lesson);
     }
 }
