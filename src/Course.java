@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 public final class Course {
 
     private final String name;
@@ -9,7 +7,7 @@ public final class Course {
     public Course(String name, int durationWeeks, Schedule schedule) {
         this.name = name;
         this.durationWeeks = durationWeeks;
-        this.schedule = new Schedule(new ArrayList<>(schedule.getLessons()));
+        this.schedule = schedule.clone();
     }
 
     public String getName() {
@@ -21,6 +19,6 @@ public final class Course {
     }
 
     public Schedule getSchedule() {
-        return new Schedule(new ArrayList<>(schedule.getLessons()));
+        return schedule.clone();
     }
 }

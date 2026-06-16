@@ -1,22 +1,31 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Schedule {
+public class Schedule implements Cloneable {
     private List<String> lessons;
 
     public Schedule(List<String> lessons) {
-        this.lessons = new ArrayList<>(lessons);
+        this.lessons = lessons != null ? new ArrayList<>(lessons) : new ArrayList<>();
     }
 
     public List<String> getLessons() {
         return lessons;
     }
 
+    @Override
+    public Schedule clone() {
+        return new Schedule(this.lessons);
+    }
+
     public void addLesson(String lesson) {
-        lessons.add(lesson);
+        if (lesson != null) {
+            lessons.add(lesson);
+        }
     }
 
     public void removeLesson(String lesson) {
-        lessons.remove(lesson);
+        if (lesson != null) {
+            lessons.remove(lesson);
+        }
     }
 }
