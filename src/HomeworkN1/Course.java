@@ -1,3 +1,5 @@
+package HomeworkN1;
+
 public final class Course {
 
     private final String name;
