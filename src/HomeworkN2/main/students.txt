@@ -1,0 +1,22 @@
+Ivan
+The Great Gatsby,180,1925
+Clean Code,464,2008
+Effective Java,412,2001
+The Pragmatic Programmer,352,1999
+Design Patterns,395,1994
+Refactoring,448,2018
+Bob
+Harry Potter,309,1997
+The Hobbit,310,1937
+1984,328,1949
+Brave New World,311,1932
+Dune,412,1965
+Domain-Driven Design,560,2003
+John
+Introduction to Algorithms,1292,2009
+Structure and Interpretation,657,1996
+The Clean Coder,256,2011
+Working Effectively,384,2004
+Code Complete,960,2004
+Continuous Delivery,512,2010
+
